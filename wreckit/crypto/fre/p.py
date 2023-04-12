@@ -1,0 +1,7 @@
+import base64
+
+cipher_text = "JJCVEUCYKZDTIMD3KBCUYQ2HIJPWOYTZMJQXI5TBL5XHQ2C7OFRGC5BBEEWF66DIMVXGC5CDOJ5G4YLOMZXGCX3VOJ2XE5LSPU======"
+
+decoded_text = base64.b64decode(cipher_text)
+
+print(decoded_text)
