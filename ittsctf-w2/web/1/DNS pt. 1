@@ -1,0 +1,25 @@
+==========================================================================
+
+# dig id.
+
+; <<>> DiG 9.16.1-Ubuntu <<>> id.
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 39238
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;id.                            IN      A
+
+;; AUTHORITY SECTION:
+id.                     86400   IN      SOA     b.dns.id. hostmaster.pandi.id. 2022300151 28800 7200 604800 172800
+
+;; Query time: 184 msec
+;; SERVER: 1.1.1.1#53(1.1.1.1)
+;; WHEN: Thu Mar 09 03:04:27 UTC 2023
+;; MSG SIZE  rcvd: 90
+
+68 97 114 105 32 105 110 102 111 114 109 97 115 105 32 100 105 32 97 116 97 115 32 100 105 32 107 101 116 97 104 117 105 32 98 97 104 119 97 32 119 97 107 116 117 32 121 97 110 103 32 100 105 32 112 101 114 108 117 107 97 110 32 115 101 114 118 101 114 32 117 110 116 117 107 32 109 101 114 101 115 112 111 110 32 112 101 114 109 105 110 116 97 110 32 113 117 101 114 121 32 65 110 100 97 32 97 100 97 108 97 104 32 46 46 46
+

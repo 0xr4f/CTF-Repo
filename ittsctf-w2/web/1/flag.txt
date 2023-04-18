@@ -1,0 +1,1 @@
+flag{penggunaan_URL_berbahaya_jika_tidak_dibatasi}

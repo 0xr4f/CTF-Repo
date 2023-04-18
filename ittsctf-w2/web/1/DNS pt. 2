@@ -1,0 +1,28 @@
+dig NS id.
+
+Hasil yang di peroleh adalah,
+
+  ; <<>> DiG 9.18.1-1ubuntu1.3-Ubuntu <<>> NS id.
+  ;; global options: +cmd
+  ;; Got answer:
+  ;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 61486
+  ;; flags: qr rd ra; QUERY: 1, ANSWER: 5, AUTHORITY: 0, ADDITIONAL: 1
+  
+  ;; OPT PSEUDOSECTION:
+  ; EDNS: version: 0, flags:; udp: 65494
+  ;; QUESTION SECTION:
+  ;id.				IN	NS
+  
+  ;; ANSWER SECTION:
+  id.			7139	IN	NS	d.dns.id.
+  id.			7139	IN	NS	c.dns.id.
+  id.			7139	IN	NS	b.dns.id.
+  id.			7139	IN	NS	ns4.apnic.net.
+  id.			7139	IN	NS	e.dns.id.
+  
+  ;; Query time: 0 msec
+  ;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
+  ;; WHEN: Sat Feb 18 09:31:39 WIB 2023
+  ;; MSG SIZE  rcvd: 126
+
+RGFyaSBpbmZvcm1hc2kgZGkgYXRhcywgYmVyYXBhIGp1bWxhaCBuYW1lIHNlcnZlciB5YW5nIG1lbWJhd2EgaW5mb3JtYXNpIGRvbWFpbiAuaWQ/
